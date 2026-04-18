@@ -7,67 +7,88 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fdf2f2; }
-        .product-card { background: white; border: 1px solid #fce8e8; border-radius: 20px; overflow: hidden; }
+        body { font-family: 'Inter', sans-serif; background-color: #fdf2f2; color: #333; }
+        .product-card { background: white; border: 1px solid #fce8e8; border-radius: 20px; overflow: hidden; transition: transform 0.3s shadow 0.3s; }
+        .product-card:hover { transform: translateY(-5px); shadow: 0 10px 25px -5px rgba(183, 110, 121, 0.1); }
         .accent-text { color: #b76e79; }
+        .accent-bg { background-color: #b76e79; }
+        
+        /* Consistent Logo Fix */
+        .logo-fit {
+            height: 50px;
+            width: 80px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
 
-    <nav class="p-6 border-b border-pink-100 flex justify-between items-center bg-white sticky top-0 z-50">
-        <a href="index.html" class="font-black text-xl tracking-tighter uppercase">Star Salt<span class="accent-text">.</span></a>
-        <a href="https://wa.me/923318484115" class="bg-green-500 text-white px-4 py-2 text-[10px] font-bold rounded-full uppercase tracking-widest">WhatsApp Chat</a>
+    <nav class="p-4 md:px-10 border-b border-pink-100 flex justify-between items-center bg-white sticky top-0 z-50">
+        <a href="index.html" class="flex items-center">
+            <img src="https://i.postimg.cc/FHnZYDyD/1776522181046.png" alt="Star Himalayan Salt Logo" class="logo-fit">
+        </a>
+        <a href="https://wa.me/923318484115" class="accent-bg text-white px-5 py-2 text-[10px] font-bold rounded-full uppercase tracking-widest shadow-md hover:bg-[#a65d68] transition">WhatsApp Chat</a>
     </nav>
 
     <header class="py-16 px-6 text-center">
-        <h1 class="text-4xl font-black uppercase tracking-tight mb-2">Export Catalog</h1>
+        <h1 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-2">Export Catalog</h1>
         <p class="text-gray-500 text-[10px] uppercase tracking-[0.4em]">Direct from Peshawar Headquarters</p>
     </header>
 
     <main class="max-w-7xl mx-auto px-6 pb-24">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
-            <div class="product-card p-6">
-                <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
-                    <img src="https://i.postimg.cc/zGCVHBY1/1776519092043.png" class="w-full h-full object-cover">
+            <div class="product-card p-6 flex flex-col justify-between">
+                <div>
+                    <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
+                        <img src="https://i.postimg.cc/zGCVHBY1/1776519092043.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-bold uppercase mb-1">1kg Culinary Pouch</h3>
+                    <p class="accent-text text-[10px] font-bold mb-6 tracking-widest uppercase">Premium Retail Ready</p>
                 </div>
-                <h3 class="text-sm font-bold uppercase mb-1">1kg Culinary Pouch</h3>
-                <p class="accent-text text-[10px] font-bold mb-6 tracking-widest">Premium Retail Ready</p>
-                <a href="https://wa.me/923318484115?text=Inquiry: 1kg Pouch" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg">Inquire</a>
+                <a href="https://wa.me/923318484115?text=Inquiry: 1kg Pouch" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg hover:bg-gray-800 transition">Inquire</a>
             </div>
 
-            <div class="product-card p-6">
-                <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
-                    <img src="https://i.postimg.cc/jjJKn376/1776519101249.png" class="w-full h-full object-cover">
+            <div class="product-card p-6 flex flex-col justify-between">
+                <div>
+                    <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
+                        <img src="https://i.postimg.cc/jjJKn376/1776519101249.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-bold uppercase mb-1">Gourmet Glass Jar</h3>
+                    <p class="accent-text text-[10px] font-bold mb-6 tracking-widest uppercase">Luxury Bamboo Lid</p>
                 </div>
-                <h3 class="text-sm font-bold uppercase mb-1">Gourmet Glass Jar</h3>
-                <p class="accent-text text-[10px] font-bold mb-6 tracking-widest">Luxury Bamboo Lid</p>
-                <a href="https://wa.me/923318484115?text=Inquiry: Glass Jar" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg">Inquire</a>
+                <a href="https://wa.me/923318484115?text=Inquiry: Glass Jar" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg hover:bg-gray-800 transition">Inquire</a>
             </div>
 
-            <div class="product-card p-6">
-                <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
-                    <img src="https://i.postimg.cc/rwD27ZQk/1776519124613.png" class="w-full h-full object-cover">
+            <div class="product-card p-6 flex flex-col justify-between">
+                <div>
+                    <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
+                        <img src="https://i.postimg.cc/rwD27ZQk/1776519124613.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-bold uppercase mb-1">Natural Salt Lamp</h3>
+                    <p class="accent-text text-[10px] font-bold mb-6 tracking-widest uppercase">Hand-Carved Wellness</p>
                 </div>
-                <h3 class="text-sm font-bold uppercase mb-1">Natural Salt Lamp</h3>
-                <p class="accent-text text-[10px] font-bold mb-6 tracking-widest">Hand-Carved Wellness</p>
-                <a href="https://wa.me/923318484115?text=Inquiry: Salt Lamp" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg">Inquire</a>
+                <a href="https://wa.me/923318484115?text=Inquiry: Salt Lamp" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg hover:bg-gray-800 transition">Inquire</a>
             </div>
 
-            <div class="product-card p-6">
-                <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
-                    <img src="https://i.postimg.cc/sxLwWmSQ/1776519115592.png" class="w-full h-full object-cover">
+            <div class="product-card p-6 flex flex-col justify-between">
+                <div>
+                    <div class="aspect-square mb-6 bg-pink-50 flex items-center justify-center rounded-xl overflow-hidden">
+                        <img src="https://i.postimg.cc/sxLwWmSQ/1776519115592.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-sm font-bold uppercase mb-1">25kg Export Sacks</h3>
+                    <p class="accent-text text-[10px] font-bold mb-6 tracking-widest uppercase">Bulk Industrial Load</p>
                 </div>
-                <h3 class="text-sm font-bold uppercase mb-1">25kg Export Sacks</h3>
-                <p class="accent-text text-[10px] font-bold mb-6 tracking-widest">Bulk Industrial Load</p>
-                <a href="https://wa.me/923318484115?text=Inquiry: Bulk Sacks" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg">Inquire</a>
+                <a href="https://wa.me/923318484115?text=Inquiry: Bulk Sacks" class="block w-full text-center bg-black text-white py-4 text-[10px] font-bold uppercase rounded-lg hover:bg-gray-800 transition">Inquire</a>
             </div>
 
         </div>
     </main>
 
-    <footer class="py-10 text-center bg-white border-t border-pink-100">
-        <p class="text-[9px] uppercase tracking-widest text-gray-400">Peshawar HQ | raheelhayat038@gmail.com</p>
+    <footer class="py-12 text-center bg-white border-t border-pink-100">
+        <p class="text-[9px] uppercase tracking-[0.5em] text-gray-400">Peshawar HQ | raheelhayat038@gmail.com</p>
     </footer>
 
 </body>
