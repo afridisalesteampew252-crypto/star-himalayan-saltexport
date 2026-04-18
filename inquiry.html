@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Inquiry | Star Himalayan Salt Pakistan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fafafa; }
+        .serif { font-family: 'Bodoni Moda', serif; }
+        .form-input { 
+            width: 100%; padding: 1rem; border: 1px solid #e5e7eb; 
+            background: #fff; border-radius: 0; outline: none; transition: all 0.3s;
+        }
+        .form-input:focus { border-color: #b76e79; }
+    </style>
+</head>
+<body>
+
+    <section class="min-h-screen grid grid-cols-1 md:grid-cols-2">
+        
+        <div class="bg-black text-white p-12 md:p-24 flex flex-col justify-between">
+            <div>
+                <a href="index.html" class="serif text-2xl tracking-widest uppercase mb-12 block">Star<span class="text-[#b76e79]">.</span></a>
+                <h1 class="serif text-4xl md:text-6xl mb-6 italic leading-tight">Global Supply <br>Partnership.</h1>
+                <p class="text-gray-400 font-light leading-loose mb-12 max-w-sm">
+                    We specialize in bulk export and private labeling for international markets. Our Peshawar-based team handles everything from the Salt Range to Karachi Port.
+                </p>
+                
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <span class="text-[#b76e79] font-bold">01</span>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-widest font-bold">Logistics</h4>
+                            <p class="text-sm text-gray-500">FOB/CIF shipping to any international port.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-[#b76e79] font-bold">02</span>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-widest font-bold">Quality</h4>
+                            <p class="text-sm text-gray-500">Chemical analysis reports provided for every batch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-[10px] uppercase tracking-widest text-gray-500">Direct Contact</p>
+                <p class="text-lg mt-2">+92 331 8484115</p>
+                <p class="text-sm text-gray-500 uppercase tracking-widest mt-1">Peshawar, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="p-12 md:p-24 bg-white">
+            <h2 class="serif text-3xl mb-2">Request Export Quote</h2>
+            <p class="text-gray-400 text-sm mb-10 italic">Please provide your business details for a technical data sheet.</p>
+
+            <form action="https://formspree.io/f/your-id" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Full Name</label>
+                        <input type="text" name="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Company Name</label>
+                        <input type="text" name="company" class="form-input" placeholder="Import Ltd." required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Work Email</label>
+                    <input type="email" name="email" class="form-input" placeholder="partner@business.com" required>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Destination Country</label>
+                        <input type="text" name="country" class="form-input" placeholder="e.g. United Kingdom" required>
+                    </div>
+                    <div>
+                        <label class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Estimated Monthly Volume</label>
+                        <select name="volume" class="form-input">
+                            <option>Trial Order (LCL)</option>
+                            <option>1x20ft Container (FCL)</option>
+                            <option>5+ Containers Monthly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="text-[10px] uppercase font-bold tracking-widest text-gray-400">Specifications / Requirements</label>
+                    <textarea name="message" rows="4" class="form-input" placeholder="Bulk bags, retail packaging, or specific grain size?"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-black text-white py-5 uppercase text-[10px] font-bold tracking-[0.3em] hover:bg-[#b76e79] transition">
+                    Submit Partnership Request
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+</body>
+  </html>
+
