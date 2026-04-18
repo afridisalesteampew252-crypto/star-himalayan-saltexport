@@ -1,144 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Himalayan Salt | Global Export Headquarters Peshawar</title>
+    <title>Star Himalayan Salt | Export & Wholesale</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root { --brand-pink: #fdf2f2; --gold-text: #b76e79; }
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; background-color: #fafafa; }
-        .serif { font-family: 'Bodoni Moda', serif; }
-        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-        .spec-table td { border-bottom: 1px solid #f3f4f6; padding: 1rem 0; font-size: 0.875rem; }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; scroll-behavior: smooth; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
+        .card { border: 1px solid #eee; transition: all 0.3s ease; }
+        .card:hover { border-color: #b76e79; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .bg-brand { background-color: #b76e79; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 p-6 glass border-b border-gray-100 flex justify-between items-center">
-        <div class="serif text-2xl font-bold tracking-widest uppercase">Star<span class="text-[--gold-text]">.</span></div>
-        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.3em] font-bold">
-            <a href="#collection" class="hover:text-[--gold-text]">Products</a>
-            <a href="#specs" class="hover:text-[--gold-text]">Technical Specs</a>
-            <a href="#logistics" class="hover:text-[--gold-text]">Logistics</a>
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-extrabold tracking-tighter">STAR<span class="text-[#b76e79]">.</span>SALT</div>
+        <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-widest">
+            <a href="#catalog">Catalog</a>
+            <a href="#bulk">Bulk Tiers</a>
+            <a href="#contact">Inquiry</a>
         </div>
-        <a href="https://wa.me/923318484115" class="bg-black text-white px-6 py-2 text-[10px] uppercase tracking-widest rounded-full hover:bg-[--gold-text] transition">WhatsApp Inquiry</a>
+        <a href="https://wa.me/923318484115" class="bg-green-500 text-white px-5 py-2 rounded text-[10px] font-bold uppercase">WhatsApp Sales</a>
     </nav>
 
-    <section class="h-[90vh] flex flex-col justify-center items-center text-center px-6">
-        <span class="text-[--gold-text] text-[10px] font-bold tracking-[0.6em] uppercase mb-4">Peshawar, Pakistan</span>
-        <h1 class="serif text-5xl md:text-8xl leading-tight mb-8">Direct Export.<br><span class="italic font-light">Ancient Purity.</span></h1>
-        <p class="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed mb-12">
-            Leading international supplier of premium Himalayan Pink Salt. We handle full-cycle logistics from the Salt Range to your port of choice.
-        </p>
-        <div class="flex gap-4">
-            <a href="#specs" class="bg-black text-white px-10 py-4 text-[10px] uppercase tracking-widest font-bold shadow-xl">Data Sheet</a>
-            <a href="mailto:raheelhayat038@gmail.com" class="border border-gray-200 px-10 py-4 text-[10px] uppercase tracking-widest font-bold hover:bg-white">Email Us</a>
+    <header class="bg-gray-50 py-16 px-6 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="max-w-xl text-center md:text-left">
+                <span class="text-[#b76e79] text-xs font-bold uppercase tracking-[0.3em]">Direct Export | Peshawar</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold mt-3 mb-6">Premium Grade Himalayan Pink Salt</h1>
+                <p class="text-gray-500 text-sm leading-relaxed">Supplying global retail chains and wellness distributors with 100% pure, unrefined minerals from the heart of Pakistan.</p>
+            </div>
+            <div class="bg-white p-6 border border-gray-200 shadow-sm text-center min-w-[300px]">
+                <p class="text-[10px] font-bold text-gray-400 uppercase">Export Inquiry</p>
+                <p class="text-xl font-bold mt-2">raheelhayat038@gmail.com</p>
+                <a href="mailto:raheelhayat038@gmail.com" class="mt-4 inline-block bg-black text-white px-8 py-3 text-[10px] font-bold uppercase w-full">Request Quote</a>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section id="collection" class="py-24 px-6 max-w-7xl mx-auto border-t border-gray-100">
-        <h2 class="serif text-4xl mb-16 italic">Retail & Bulk Solutions</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="bg-white p-6 border border-gray-50 shadow-sm">
-                <img src="pouch.png" class="h-64 w-full object-contain mb-6">
-                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Culinary</p>
-                <h4 class="serif text-lg italic mt-1">1kg Premium Pouch</h4>
-            </div>
-            <div class="bg-white p-6 border border-gray-50 shadow-sm">
-                <img src="jar.png" class="h-64 w-full object-contain mb-6">
-                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Tableware</p>
-                <h4 class="serif text-lg italic mt-1">Designer Glass Jar</h4>
-            </div>
-            <div class="bg-white p-6 border border-gray-50 shadow-sm">
-                <img src="lamp-rough.jpg" class="h-64 w-full object-contain mb-6">
-                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Wellness</p>
-                <h4 class="serif text-lg italic mt-1">Natural Salt Lamp</h4>
-            </div>
-            <div class="bg-white p-6 border border-gray-50 shadow-sm flex flex-col justify-center items-center text-center">
-                <div class="bg-gray-50 w-full h-64 flex items-center justify-center">
-                     <span class="text-gray-300 serif text-5xl">25kg</span>
+    <section id="catalog" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-extrabold mb-12">Retail-Ready Collection</h2>
+        <div class="product-grid">
+            <div class="card p-6 bg-white">
+                <img src="pouch.png" class="w-full aspect-square object-contain mb-6">
+                <h3 class="font-bold text-sm">Himalayan Pink Salt 1kg Pouch</h3>
+                <p class="text-xs text-gray-400 mt-1">Export Grade • Fine Grain</p>
+                <div class="mt-6 flex justify-between items-center border-t pt-4">
+                    <span class="font-bold text-[#b76e79]">$12.50</span>
+                    <a href="https://wa.me/923318484115" class="text-[10px] font-bold uppercase tracking-widest text-black">Buy Bulk</a>
                 </div>
-                <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mt-6">Industrial</p>
-                <h4 class="serif text-lg italic mt-1">Bulk Export Sacks</h4>
+            </div>
+            <div class="card p-6 bg-white">
+                <img src="jar.png" class="w-full aspect-square object-contain mb-6">
+                <h3 class="font-bold text-sm">Luxury Glass Jar Edition</h3>
+                <p class="text-xs text-gray-400 mt-1">Bamboo Lid • Premium Packaging</p>
+                <div class="mt-6 flex justify-between items-center border-t pt-4">
+                    <span class="font-bold text-[#b76e79]">$24.00</span>
+                    <a href="https://wa.me/923318484115" class="text-[10px] font-bold uppercase tracking-widest text-black">Buy Bulk</a>
+                </div>
+            </div>
+            <div class="card p-6 bg-white">
+                <img src="lamp-rough.jpg" class="w-full aspect-square object-contain mb-6">
+                <h3 class="font-bold text-sm">Natural Shape Salt Lamp</h3>
+                <p class="text-xs text-gray-400 mt-1">Wellness • Hand-Carved</p>
+                <div class="mt-6 flex justify-between items-center border-t pt-4">
+                    <span class="font-bold text-[#b76e79]">$45.00</span>
+                    <a href="https://wa.me/923318484115" class="text-[10px] font-bold uppercase tracking-widest text-black">Buy Bulk</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="specs" class="py-24 bg-white px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="serif text-4xl mb-4 italic text-center">Technical Analysis</h2>
-            <p class="text-center text-gray-400 text-sm mb-16 uppercase tracking-[0.2em]">Certified Purity Standards</p>
-            
-            <table class="w-full spec-table">
-                <tr>
-                    <td class="font-bold text-gray-900">Sodium Chloride (NaCl)</td>
-                    <td class="text-right text-gray-500">98.2% - 99.1%</td>
-                </tr>
-                <tr>
-                    <td class="font-bold text-gray-900">Trace Minerals (Ca, Mg, K)</td>
-                    <td class="text-right text-gray-500">84+ Rich Minerals</td>
-                </tr>
-                <tr>
-                    <td class="font-bold text-gray-900">Moisture Content</td>
-                    <td class="text-right text-gray-500">&lt; 0.20%</td>
-                </tr>
-                <tr>
-                    <td class="font-bold text-gray-900">Grain Sizes Available</td>
-                    <td class="text-right text-gray-500">Fine (0.1-0.5mm), Granular (1-2mm), Coarse (3-5mm)</td>
-                </tr>
-                <tr>
-                    <td class="font-bold text-gray-900">Chemical Additives</td>
-                    <td class="text-right text-gray-500">100% Zero Additives / Unrefined</td>
-                </tr>
-            </table>
+    <section id="bulk" class="bg-gray-900 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Volume Export Tiers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border border-gray-700 p-8 text-center">
+                    <h4 class="text-[#b76e79] font-bold uppercase text-xs mb-4">Trial Order</h4>
+                    <p class="text-3xl font-bold mb-4">LCL</p>
+                    <p class="text-gray-400 text-sm italic">Small quantity mixed shipments for new distributors.</p>
+                </div>
+                <div class="bg-[#b76e79] p-8 text-center shadow-2xl">
+                    <h4 class="text-white font-bold uppercase text-xs mb-4">Standard Export</h4>
+                    <p class="text-3xl font-bold mb-4">20ft FCL</p>
+                    <p class="text-white text-sm italic">Full container loads with custom private labeling.</p>
+                </div>
+                <div class="border border-gray-700 p-8 text-center">
+                    <h4 class="text-[#b76e79] font-bold uppercase text-xs mb-4">Industrial Supply</h4>
+                    <p class="text-3xl font-bold mb-4">Bulk</p>
+                    <p class="text-gray-400 text-sm italic">25kg - 50kg poly bags for food processing units.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="logistics" class="py-24 px-6 bg-black text-white">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
+    <footer id="contact" class="py-20 px-6 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
-                <h2 class="serif text-4xl mb-8 italic text-[--gold-text]">Global Fulfillment</h2>
-                <div class="space-y-12">
-                    <div>
-                        <h4 class="text-xs uppercase tracking-[0.3em] font-bold mb-2">Shipping Origin</h4>
-                        <p class="text-gray-400 text-sm font-light">FOB Karachi Port / Port Qasim. We facilitate worldwide shipping through major liners (MSC, Maersk, CMA CGM).</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xs uppercase tracking-[0.3em] font-bold mb-2">Lead Time</h4>
-                        <p class="text-gray-400 text-sm font-light">15-20 days from order confirmation for Full Container Loads (FCL).</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xs uppercase tracking-[0.3em] font-bold mb-2">Compliance</h4>
-                        <p class="text-gray-400 text-sm font-light">Meets HACCP, ISO 9001, and US FDA food-grade requirements.</p>
-                    </div>
+                <h2 class="text-3xl font-black mb-6">Get a Sample.</h2>
+                <p class="text-gray-500 mb-8 leading-relaxed">Request a chemical analysis report or product samples for your quality control team. Based in Peshawar, shipping via Karachi Port.</p>
+                <div class="space-y-4 font-bold text-sm">
+                    <p>WhatsApp: +92 331 8484115</p>
+                    <p>Email: raheelhayat038@gmail.com</p>
                 </div>
             </div>
-
-            <div class="bg-gray-900 p-12 border border-gray-800">
-                <h3 class="serif text-2xl mb-8 italic">Direct Inquiry</h3>
-                <div class="space-y-6">
-                    <div>
-                        <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Email</p>
-                        <a href="mailto:raheelhayat038@gmail.com" class="text-xl hover:text-[--gold-text]">raheelhayat038@gmail.com</a>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">WhatsApp / Phone</p>
-                        <a href="https://wa.me/923318484115" class="text-xl hover:text-[--gold-text]">+92 331 8484115</a>
-                    </div>
-                    <div>
-                        <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">HQ Address</p>
-                        <p class="text-gray-400">Peshawar, Khyber Pakhtunkhwa, Pakistan</p>
-                    </div>
-                </div>
-            </div>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-4 border border-gray-200 outline-none">
+                <input type="email" placeholder="Business Email" class="w-full p-4 border border-gray-200 outline-none">
+                <textarea placeholder="Tell us your target country and volume" class="w-full p-4 border border-gray-200 outline-none h-32"></textarea>
+                <button type="button" onclick="window.location.href='mailto:raheelhayat038@gmail.com'" class="w-full bg-black text-white py-4 font-bold uppercase tracking-widest">Send Inquiry</button>
+            </form>
         </div>
-    </section>
-
-    <footer class="py-12 text-center text-gray-300 border-t border-gray-100">
-        <p class="text-[9px] uppercase tracking-[0.6em]">Star Himalayan Salt | International Division 2026</p>
+        <div class="text-center mt-20 text-[10px] text-gray-300 tracking-[0.4em] uppercase">Star Himalayan Salt | Peshawar, Pakistan</div>
     </footer>
 
 </body>
